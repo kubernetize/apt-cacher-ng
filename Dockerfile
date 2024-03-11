@@ -1,4 +1,4 @@
-FROM debian:bullseye-slim
+FROM debian:bookworm-slim
 
 RUN \
     useradd -u 987 -d /var/cache/apt-cacher-ng -M apt-cacher-ng && \
