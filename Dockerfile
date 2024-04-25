@@ -1,7 +1,7 @@
 FROM debian:bookworm-slim
 
 RUN \
-    useradd -u 987 -d /var/cache/apt-cacher-ng -M apt-cacher-ng && \
+    useradd -u 987 -r -d /var/cache/apt-cacher-ng -M apt-cacher-ng && \
     apt-get update && \
     DEBIAN_FRONTEND=noninteractive apt-get install -y apt-cacher-ng && \
     rm -rf /var/lib/apt/lists/* && \
