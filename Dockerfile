@@ -1,4 +1,4 @@
-FROM debian:bookworm-slim
+FROM debian:trixie-slim
 
 RUN \
     useradd -u 987 -r -d /var/cache/apt-cacher-ng -M apt-cacher-ng && \
